@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="rezervation.css">
+    <title>Food Time/Contact Us</title>
+</head>
+<body>
+    <div id="divk1">
+        <img src="Food_Time233-removebg-preview.png" alt="" class="logofodtime">
+        
+
+        <a href="pageHome.html"><button id="b1"><img src="home.png" alt="" class="img1"><p class="p1">Home</p></button></a>
+        <a href="page1.html"><button id="b2" ><img src="restaurant_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt="" class="img1"><p class="p1">Menu</p></button></a>
+
+        <a href="Rezervation.html"><button id="b2" style="background-color: #ffc107;"><img src="calendari-removebg-preview.png" alt="" class="img1"><p class="p1">Rezervation</p></button></a>
+        <a href="contactus.html"><button id="b2"><img src="contacts_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt="" class="img1"><p class="p1">Contact us</p></button></a>
+        <a href="https://wwwgoogle.com"><button id="b3"><img src="logout.png" alt="" class="img1"><p class="p1">log out</p></button></a>
+
+
+
+
+
+
+
+
+ 
+        
+    </div>
+    <div id="divkryesor">
+        <div id="div1n2">
+
+            <input type="text" id="in1" placeholder="Search Type of food"  >
+            <button id="b11" onclick="search()">Search</button>
+        </div> 
+        <img src="menu_open_24dp_FILL0_wght400_GRAD0_opsz24.png" class="imgmenu" alt="" >
+        <div id="divkr1">
+            <div class="divi1"></div>
+            <div class="divi2"><p>Rezervation</p></div>
+            <div class="divi3"></div>
+        </div>
+        <div id="divkr2" >
+  
+
+
+
+            <div class="divkr2n3" onclick="f2()"><i class="fa-solid fa-plus"></i></div>
+        </div>
+
+    </div>
+    <div id="cardrezervation">
+        <img src="arrow_back_ios_24dp_FILL0_wght400_GRAD0_opsz24 (1).png" alt=""  onclick="back()" class="arrowback">
+
+     
+
+
+    </div>
+    
+</body>
+<script src="https://kit.fontawesome.com/56596bff54.js" crossorigin="anonymous">
+
+
+</script>
+
+<script>
+
+        function f2() {
+         const elements = document.getElementsByClassName("divkr2n3")[0];
+    
+    
+
+        elements.style.border = "3px inset white";
+
+        setTimeout(() => {
+            elements.style.border = "3px outset white"; 
+        }, 500);
+        setTimeout(() => {
+            document.getElementById("cardrezervation").style.display="block"
+            let divikryesor=document.createElement("div");
+            divikryesor.classList.add("divibrendare");
+            document.getElementById("cardrezervation").appendChild(divikryesor);
+            let imazhi=document.createElement("img");
+            imazhi.src="Food_Time-removebg-preview.png";
+            imazhi.classList.add("divff")
+            divikryesor.appendChild(imazhi);
+            let paragrafi=document.createElement("p");
+            paragrafi.classList.add("pwelcome");
+            paragrafi.innerHTML="Welcome to rezervation in Food Time Rezervation, there you can make rezervation and make sure to fill all the inputs for all informations."
+            divikryesor.appendChild(paragrafi)
+            let diviparR=document.createElement("div");
+            diviparR.id="diviparR";
+            divikryesor.appendChild(diviparR)
+            let pname=document.createElement("p");
+            pname.innerHTML="Name:";
+            pname.classList.add("pname");
+            diviparR.appendChild(pname)
+            let inputiName=document.createElement("input");
+            inputiName.type="text";
+            inputiName.id="Name";
+            inputiName.placeholder="Your Name";
+            diviparR.appendChild(inputiName);
+            let paragrafi2=document.createElement("p")
+            paragrafi2.classList.add("pname")
+            paragrafi2.innerHTML="Date and Time:";
+            diviparR.appendChild(paragrafi2);
+            let dateandtime=document.createElement("input");
+            dateandtime.type="datetime-local";
+            dateandtime.id="Name"
+            diviparR.appendChild(dateandtime);
+            let paragrafi3=document.createElement("p")
+            paragrafi3.innerHTML="Your phone Number"
+            paragrafi3.classList.add("pname");
+            diviparR.appendChild(paragrafi3);
+            let phonenumber=document.createElement("input");
+            phonenumber.type="tel";
+            phonenumber.id="Telnumber"
+            phonenumber.placeholder="your phone number"
+            diviparR.appendChild(phonenumber);
+            let diviparR2=document.createElement("div");
+            diviparR2.id="diviparR2";
+            divikryesor.appendChild(diviparR2)
+            let paragrafi4=document.createElement("p")
+            paragrafi4.innerHTML="Number of people"
+            paragrafi4.classList.add("pname");
+            diviparR2.appendChild(paragrafi4);
+            let NofPeople=document.createElement("input");
+            NofPeople.type="number";
+            NofPeople.id="Telnumber2"
+            NofPeople.placeholder="Number of people"
+            diviparR2.appendChild(NofPeople);
+            let paragrafi5=document.createElement("p")
+            paragrafi5.innerHTML="ocassion"
+            paragrafi5.classList.add("pname");
+            diviparR2.appendChild(paragrafi5);
+            let ocassion=document.createElement("input");
+            ocassion.type="text";
+            ocassion.id="Name"
+            ocassion.placeholder="ocassion"
+            diviparR2.appendChild(ocassion);
+            let submit=document.createElement("input")
+            submit.type="submit";
+            submit.id="sb1";
+            diviparR2.appendChild(submit)
+
+            function Name() {
+             if (inputiName.value.length >= 8) {
+              inputiName.style.border = "3px solid #0e6253";  
+             } else {
+              inputiName.style.border = "3px solid #c8f4ec";    
+               }
+            }
+            document.getElementById("Name").addEventListener("input",Name)
+
+            function numbertel(){
+    
+                if(isNaN(Telnumber.value)){
+                     Telnumber.value="";
+                }
+                else if(Telnumber.value.length>8 && Telnumber.value.length<=10){
+                    Telnumber.style.border = "3px solid #0e6253";  
+
+
+                }
+                else if(Telnumber.value.length>10 ){
+                    Telnumber.style.border = "3px solid red";  
+
+
+                }
+
+                else{
+                    Telnumber.style.border = "3px solid #c8f4ec";  
+
+                }
+ 
+
+            }
+            function numbertel2(){
+    
+                if(isNaN(Telnumber2.value)){
+                    Telnumber2.value="";
+                }
+
+                else if(Telnumber2.value>15){
+                    alert("you cant make Rezervation for more than 15 people")
+                    Telnumber2.value=14;
+                    Telnumber2.style.border = "3px solid #0e6253";  
+
+
+                }
+                else if(Telnumber2.value<=1){
+                    alert("you cant make Rezervation for less than 1 person")
+                    Telnumber2.value=2;
+                    Telnumber2.style.border = "3px solid #0e6253";  
+    
+
+
+                }
+                else{
+                    Telnumber2.style.border = "3px solid #0e6253";  
+
+                }
+ 
+ 
+
+            }
+            document.getElementById("Telnumber").addEventListener("input",numbertel)
+            document.getElementById("Telnumber2").addEventListener("input",numbertel2)
+
+            submit.addEventListener("click",function(){
+
+
+                while(inputiName.value.length>=8 && dateandtime.value!="" && phonenumber.value.length >=9 && phonenumber.value.length<=10 && NofPeople.value !=""){
+                    submit.disabled=false
+
+                   document.getElementsByClassName("divibrendare")[0].remove()        
+
+                   document.getElementById("cardrezervation").style.display="none";
+
+                   divik=document.createElement("div")
+                   divik.classList.add("divkr2n2")
+                   document.getElementById("divkr2").appendChild(divik);
+                   let logo=document.createElement("img")
+                   logo.src="Food_Time-removebg-preview.png"
+                   logo.classList.add("foodtimelogo");
+                   divik.appendChild(logo)  
+                   let p11=document.createElement("p")
+                   p11.classList.add("p111")
+                   p11.innerHTML="Rezervation in Food Time Resturant"
+                   divik.appendChild(p11)
+                   let p21=document.createElement("p")
+                   p21.classList.add("p211")
+                   p21.innerHTML="Rezervation Name: "+inputiName.value
+                   divik.appendChild(p21)
+                   let p31=document.createElement("p")
+                   p31.classList.add("p211")
+                   p31.innerHTML="Rezervation Date: "+dateandtime.value
+                   divik.appendChild(p31)
+                   let p41=document.createElement("p")
+                   p41.classList.add("p211")
+                   p41.innerHTML="Rezervation Phone Number: "+phonenumber.value
+                   divik.appendChild(p41)
+                }
+                 
+               
+
+
+                
+                
+
+
+
+            })
+
+
+
+
+
+
+
+
+            
+        }, 600);
+
+
+    
+}
+function back(){
+        document.getElementById("cardrezervation").style.display="none";
+        document.getElementsByClassName("divibrendare")[0].remove()
+    }
+
+    document.getElementsByClassName('imgmenu')[0].addEventListener('click',divkryesor)
+function divkryesor(){
+    if(document.getElementById('divk1').style.display=="none"){
+        document.getElementById('divk1').style.display="block"
+        document.getElementById('divkryesor').style.marginLeft="300px"
+
+    }
+    else{
+        document.getElementById('divk1').style.display="none"
+        document.getElementById('divkryesor').style.marginLeft="0px"
+
+    }
+}
+
+
+
+ 
+    
+
+
+</script>
+
+</html>
+
+ 
+    
+
+
+</script>
+
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="page1.css">
+    <title>Food deleviry services</title>
+
+
+</head>
+<body>
+    <div id="divk1">
+        <img src="Food_Time233-removebg-preview.png" alt="" class="logofodtime">
+
+        <a href="pageHome.html"><button id="b1"><img src="home.png" alt="" class="img1"><p class="p1">Home</p></button></a>
+        <a href="page1.html"><button id="b2" style="background-color: #ffc107;"><img src="restaurant_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt="" class="img1"><p class="p1">Menu</p></button></a>
+
+        <a href="Rezervation.html"><button id="b2"><img src="calendari-removebg-preview.png" alt="" class="img1"><p class="p1">Rezervation</p></button></a>
+        <a href="contactus.html"><button id="b2"><img src="contacts_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt="" class="img1"><p class="p1">Contact us</p></button></a>
+        <a href="https://wwwgoogle.com"><button id="b3"><img src="logout.png" alt="" class="img1"><p class="p1">log out</p></button></a>
+
+
+
+
+
+
+
+
+ 
+        
+    </div>
+    <div id="divk2">
+
+
+        
+
+
+
+
+
+
+        <div id="div1n2">
+
+            <input type="text" id="in1" placeholder="Search Type of food"  >
+            <button id="b11" onclick="search()">Search</button>
+        </div> 
+        <img src="menu_open_24dp_FILL0_wght400_GRAD0_opsz24.png" class="imgmenu" alt="" >
+
+
+
+
+        <div id="div3n2">
+            <div class="mainheder">
+                <h1 class="h2 " >recommendations</h1>
+                <div class="divsc " >
+                   <img src="arrow_back_ios_24dp_FILL0_wght400_GRAD0_opsz24 (1).png" alt=""width="25px" class="back">
+                   <img src="arrow_forward_ios_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="" width="25px" class="next">
+  
+    
+                </div>
+            </div>
+            <div id="divimgg1">
+                <img src="sallat.png" alt="" class="imgg1">
+                <div class="divp">
+                    <p class="para">Fresh Salad</p>
+                    <p class="para2">$42.25</p>
+                </div>
+            </div>
+            <div id="divimgg2">
+                <img src="Caffe_Latte.png" alt="" class="imgg2">
+                <div class="divp">
+                    <p class="para">caffe latte</p>
+                    <p class="para2">$21.02</p>
+                </div>
+
+            </div>
+            <div id="divimgg3">
+                <img src="premiumsteak.avif" alt="" class="imgg3">
+                <div class="divp">
+                    <p class="para">premiume steak</p>
+                    <p class="para2">$142.05</p>
+                </div>
+
+            </div>
+            <div id="divimgg4">
+                <img src="images (3).png" alt="" class="imgg4">
+                <div class="divp">
+                    <p class="para">big burger</p>
+                    <p class="para2">$35.9</p>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <div id="div4n2">
+
+            <div class="divhead">
+                <div class="divhead1">
+                    <p>Menu category</p>
+                    <img src="arrow_back_ios_24dp_FILL0_wght400_GRAD0_opsz24 (1).png" alt="" width="20px" style="margin-top: 10px ; cursor: pointer;" class="right">
+                    <img src="arrow_forward_ios_24dp_FILL0_wght400_GRAD0_opsz24.png" width="20px" style="cursor: pointer;" class="left">
+
+                </div>
+                
+                <div class="divhead2" >
+                    <div class="divi1" onclick="allmenus()">
+                        <img src="eat.png" alt="" width="50px" class="divhead2-img">
+                        <p style="color: black; padding: 10px; font-size: 15px;" class="menut">All menus</p>
+                    </div>
+                    <div class="divi1" onclick="burggeri()">
+                        <img src="fastfood.png" alt="" class="divhead2-img">
+                        <p style="color: black; padding: 10px; font-size: 15px;">burger</p>
+                    </div>
+                    <div class="divi1" onclick="pizzas()"> 
+                        <img src="pizza.png" alt="" class="divhead2-img">
+                        <p style="color: black; padding: 10px; font-size: 15px;">pizza</p>
+                    </div>
+                    <div class="divi1" onclick="winii()">
+                        <img src="wine.png" alt="" class="divhead2-img">
+                        <p style="color: black; padding: 10px; font-size: 15px;">wine</p>
+                    </div>
+                    <div class="divi1" onclick="icecreami()">
+                        <img src="akulore.png" alt="" class="divhead2-img">
+                        <p style="color: black; padding: 10px; font-size: 15px;">ice cream</p>
+                    </div>
+                    <div class="divi1"> 
+                        <img src="caffe.png" alt="" class="divhead2-img">
+                        <p style="color: black; padding: 10px; font-size: 15px;">coffe</p>
+                    </div>
+                    <div class="divi1">
+                        <img src="seafood.png" alt="" class="divhead2-img">
+                        <p style="color: black; padding: 10px; font-size: 15px;">sea food</p>
+                    </div>
+                    <div class="divi1">
+                        <img src="shendetshem.png" alt="" class="divhead2-img">
+                        <p style="color: black; padding: 10px; font-size: 15px;">Fruits</p>
+                    
+                    </div>
+                </div>
+
+
+                
+            </div>
+            <div class="divvija">
+                
+            </div>
+            <div id="divorder">
+                <div id="divorder1">
+                    <a href="https://wwwyoutube.com"><div >
+                        <img src="kafe.png" alt="" class="imgorder">
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left;padding-left: 10px;padding-top: 10px;">Coffe</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 190px; padding-top: 0px;margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px; padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253; padding-left: 10px; "class="loremi">21.09$</b></p>
+                    </div>
+                    </a>
+
+                    <a href="pag2.html"><div>
+                        <img src="peperonipiiza.png" alt="" class="imgorder">
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left;padding-left: 10px;padding-top: 10px;">peperoni pizza</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 100px; padding-top: 0px; margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px; padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253; padding-left: 10px;"class="loremi">26$</b></p>
+                    </div></a>
+                    <A href="tendyicecream.html"><div>
+                        <img src="icecream.png" alt="" class="imgorder" >
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left; margin-top: 10px; padding-left: 10px;padding-top: 0px;">tendy ice Cream</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 90px; margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px; display: block;padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253;padding-left: 10px; "class="loremi">10$</b></p>
+                    </div></A>
+                </div>
+                <div id="divorder2">
+                    <a href="burger.html"><div >
+                        <img src="burger.png" alt="" class="imgorder">
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left;padding-left: 10px;padding-top: 10px;">chese burger</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 120px; padding-top: 0px;margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px;padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253; padding-left: 10px;"class="loremi">17.29$</b></p>
+                    </div></a>
+                    <div>
+                        <img src="fruta.png" alt="" class="imgorder">
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left;padding-left: 10px;padding-top: 10px;">Fruits</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 190px; padding-top: 0px; margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px;padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253; padding-left: 10px;"class="loremi">5$</b></p>
+                    </div>
+                    <A href="wine.html"><div>
+                        <img src="winne2.png" alt="" class="imgorder" >
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left; margin-top: 10px; padding-left: 10px;padding-top: 0px;">clasic wine</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 120px; margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px;padding-left: 10px; " class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;" ><b style="color: #0e6253; padding-left: 10px;"class="loremi">42$</b></p>
+                    </div></A>
+                    
+                </div>
+
+            </div>
+            <div id="divorderpizza">
+                <div id="divorder1">
+                    <a href="sausagepizza.html"><div >
+                        <img src="sasuagepizza.webp" alt="" class="imgorder">
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left;padding-left: 10px;padding-top: 10px;">sasuage pizza</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 120px; padding-top: 0px;margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px; padding-left: 10px; " class="loremi" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253; padding-left: 10px; "class="loremi">32$</b></p>
+                    </div></a>
+                    <a href="pag2.html"><div>
+                        <img src="peperonipiiza.png" alt="" class="imgorder">
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left;padding-left: 10px;padding-top: 10px;">peperoni pizza</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 110px; padding-top: 0px; margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px; padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253; padding-left: 10px;"class="loremi">26$</b></p>
+                    </div></a>
+                    <a href="mushrompizza.html"><div>
+                        <img src="mushrompizza.png" alt="" class="imgorder" >
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left; margin-top: 10px; padding-left: 10px;padding-top: 0px;">Mushrom pizza</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 100px; margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px; display: block;padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253;padding-left: 10px; "class="loremi">30$</b></p>
+                    </div></a>
+                </div>
+                <div id="divorder2">
+                    <a href="meatlovers.html"><div >
+                        <img src="meatloverspizza.jpg" alt="" class="imgorder">
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left;padding-left: 10px;padding-top: 10px;">meatlovers pizza</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 90px; padding-top: 0px;margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px;padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253; padding-left: 10px;"class="loremi">35$</b></p>
+                    </div></a>
+                    <a href="chesepizza.html"><div>
+                        <img src="chesepizza.png" alt="" class="imgorder">
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left;padding-left: 10px;padding-top: 10px;">cheese pizza</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 130px; padding-top: 0px; margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px;padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+ 
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253; padding-left: 10px;"class="loremi">15$</b></p>
+                    </div></a>
+                    <a href="vegetarianpizza.html"><div>
+                        <img src="vegetarianpizza.jpg" alt="" class="imgorder" >
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left; margin-top: 10px; padding-left: 10px;padding-top: 0px;">vegetarian pizza</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 90px; margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px;padding-left: 10px; " class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;" ><b style="color: #0e6253; padding-left: 10px;"class="loremi">28$</b></p>
+                    </div></a>
+
+
+                    
+                </div>
+
+                
+
+                
+            
+
+
+            </div>
+            <div id="divordericecream">
+                <div id="divorder1">
+                    <a href="icecreambuckets.html"><div >
+                        <img src="akulllorebuckets.jfif" alt="" class="imgorder">
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left;padding-left: 10px;padding-top: 10px;">ice cream buckets</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 70px; padding-top: 0px;margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px; padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253; padding-left: 10px; "class="loremi">2.50$</b></p>
+                    </div></a>
+                    <a href="page3.html"><div>
+                        <img src="akulloretorte.webp" alt="" class="imgorder" >
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left;padding-left: 10px;padding-top: 10px;">ice cream cake</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 95px; padding-top: 0px; margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px; padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253; padding-left: 10px;"class="loremi">9.99$</b></p>
+                    </div></a>
+                    <A href="trailicecream.html"><div>
+                        <img src="icecreamnshtag.png" alt="" class="imgorder" >
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left; margin-top: 10px; padding-left: 10px;padding-top: 0px;">ice cream</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 150px; margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px; display: block;padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253;padding-left: 10px; "class="loremi">1.50$</b></p>
+                    </div></A>
+                </div>
+                <div id="divorder2">
+                    <a href="icecreamfloats.html"><div >
+                        <img src="icecreamnxham.jpg" alt="" class="imgorder">
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left;padding-left: 10px;padding-top: 10px;">ice cream floats</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 90px; padding-top: 0px;margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px;padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253; padding-left: 10px;"class="loremi">13$</b></p>
+                    </div></a>
+                    <a href="tendyicecream.html"><div>
+                        <img src="icecream.png" alt="" class="imgorder">
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left;padding-left: 10px;padding-top: 10px;">ice cream tendy</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 90px; padding-top: 0px; margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px;padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+ 
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253; padding-left: 10px;"class="loremi">5$</b></p>
+                    </div></a>
+                    <a href="icecreamsundae.html"><div>
+                        <img src="sundaeicecream.jfif" alt="" class="imgorder" >
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left; margin-top: 10px; padding-left: 10px;padding-top: 0px;">ice cream sundae</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 70px; margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px;padding-left: 10px; " class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;" ><b style="color: #0e6253; padding-left: 10px;"class="loremi">7$</b></p>
+                    </div></a>
+                    
+                </div>
+
+
+            </div>
+           
+        
+            <div id="divorderburgger">
+                <div id="divorder1">
+                    <A href="burger.html"><div >
+                        <img src="burger.png" alt="" class="imgorder">
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left;padding-left: 10px;padding-top: 10px;">burger</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 190px; padding-top: 0px;margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px; padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253; padding-left: 10px; "class="loremi">17$</b></p>
+                    </div></A>
+                    <a href="baconburger.html"><div>
+                        <img src="baconburger.jpg" alt="" class="imgorder">
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left;padding-left: 10px;padding-top: 10px;">bacon burger</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 120px; padding-top: 0px; margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px; padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253; padding-left: 10px;"class="loremi">25$</b></p>
+                    </div></a>
+                    <a href="page5.html"><div>
+                        <img src="cheseburger.jpg" alt="" class="imgorder" >
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left; margin-top: 10px; padding-left: 10px;padding-top: 0px;">chese burger</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 120px; margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px; display: block;padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253;padding-left: 10px; "class="loremi">22$</b></p>
+                    </div></a>
+                </div>
+                <div id="divorder2">
+                    <a href="specialtyburger.html"><div >
+                        <img src="specialburger.jpg" alt="" class="imgorder">
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left;padding-left: 10px;padding-top: 10px;">speciality burger</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 90px; padding-top: 0px;margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px;padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253; padding-left: 10px;"class="loremi">19.99$</b></p>
+                    </div></a>
+                    <a href="lambburger.html"><div>
+                        <img src="lambburger.jfif" alt="" class="imgorder">
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left;padding-left: 10px;padding-top: 10px;">lamb burger</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 125px; padding-top: 0px; margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px;padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+ 
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253; padding-left: 10px;"class="loremi">15$</b></p>
+                    </div></a>
+                    <a href="chickenburger.html"><div>
+                        <img src="chikenburger.jpg" alt="" class="imgorder" >
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left; margin-top: 10px; padding-left: 10px;padding-top: 0px;">chiken burger</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 110px; margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px;padding-left: 10px; " class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;" ><b style="color: #0e6253; padding-left: 10px;"class="loremi">12.99$</b></p>
+                    </div></a>
+ 
+                    
+                </div>
+
+
+            </div>
+            
+           
+            <div id="divorderwine">
+                <div id="divorder1">
+                    <A href="wine.html"><div>
+                        <img src="winne2.png" alt="" class="imgorder">
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left;padding-left: 10px;padding-top: 10px;">clasic wine</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 120px; padding-top: 0px;margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px; padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253; padding-left: 10px; "class="loremi">42$</b></p>
+                    </div></A>
+                    
+                    <a href="sangivosenwine.html"><div>
+                        <img src="sangivoesewine.png" alt="" class="imgorder">
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left;padding-left: 10px;padding-top: 10px;">sangivoese wine</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 85px; padding-top: 0px; margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px; padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253; padding-left: 10px;"class="loremi">89.99$</b></p>
+                    </div></a>
+                    <a href="pinotwine.html"><div>
+                        <img src="pinotwine.png" alt="" class="imgorder" >
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left; margin-top: 10px; padding-left: 10px;padding-top: 0px;">pinot wine</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 145px; padding-top: 0px; margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px; display: block;padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253;padding-left: 10px; "class="loremi">100$</b></p>
+                    </div></a>
+                </div>
+                <div id="divorder2">
+                    <A href="chardonay.html"><div >
+                        <img src="chardonaywine.png" alt="" class="imgorder">
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left;padding-left: 10px;padding-top: 10px;">chardonay wine</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 90px; padding-top: 0px;margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px;padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253; padding-left: 10px;"class="loremi">129.99$</b></p>
+                    </div></A>
+                    <A href="carbenetwine.html"><div>
+                        <img src="carbenetwine.png" alt="" class="imgorder">
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left;padding-left: 10px;padding-top: 10px;">carbenet wine</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 110px; padding-top: 0px; margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px;padding-left: 10px;" class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+
+                        <p style="color: #0e6253;margin-top: 10px;"><b style="color: #0e6253; padding-left: 10px;"class="loremi">60$</b></p>
+                    </div></A>
+                    <a href="page4.html"><div>
+                        <img src="pinot noir wine.png" alt="" class="imgorder" >
+                        <p ><b style="color: #0e6253; font-size: 20px; float: left; margin-top: 10px; padding-left: 10px;padding-top: 0px;">pinot noir wine</b></p>
+                        <img src="favorite.png" alt="" width="30px" style="float: left; margin-left: 90px; margin-top: 10px;" onclick="this.style.backgroundColor='orange'">
+                        <p style="color: gray;font-size: 14px;padding-left: 10px; " class="loremi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptates </p>
+                        <p style="color: #0e6253;margin-top: 10px;" ><b style="color: #0e6253; padding-left: 10px;"class="loremi">120$</b></p>
+                    </div></a>
+                
+                </div>
+            </div>   
+        </div>     
+
+    </div>
+    <script src="page1.js"></script>
+    <script src="https://kit.fontawesome.com/56596bff54.js" crossorigin="anonymous"></script>
+
+
+
+    
+</body>
+</html>

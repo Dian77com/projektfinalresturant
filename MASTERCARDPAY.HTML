@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Visa Pay Form</title>
+    <style>
+        .h11{
+            font-family: "Pacifico", cursive;
+
+            color: rgb(255, 179, 0);
+            margin: 0px 0px 0px 540px;
+
+        }
+        .visa{
+            width: 120px;
+            height: 80px;
+            margin: 40px 0px 30px 600px;
+        }
+        #divk{
+            width: 450px;
+            height: 500px;
+            margin-top: 50px;
+            margin: auto;
+            box-shadow: 0px 0px 10px black;
+            border-radius: 5px;
+            border-top: 3px solid #ff9900;
+            border-right: 3px solid #ff9900;
+            border-bottom: 3px solid #cc0000;
+            border-left: 3px solid #cc0000 ;
+
+            
+
+
+        }
+        #in21{
+            margin-left: 30px;
+            margin-top: 10px;
+            width: 220px;
+            height: 40px;
+            border: 1px solid #000066;
+            border-radius: 5px;
+            background-color: #F0F0F0;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            padding-left: 20px;
+        }
+        #in22{
+            width: 70px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: #F0F0F0;
+            color: black;
+            border: 1px solid #000066;
+            font-size: 20px;
+            margin-left: 70px;
+            margin-top: 8px;
+            text-align: center;
+        }
+        #divin1{
+            float: left;
+
+        }
+        #divin2{
+            float: left
+
+        }
+        #in22:focus{
+            border: 1px solid #000066;
+            outline: none;
+        }
+        #in21:focus{
+            border: 1px solid #000066;
+            outline: none;
+
+        }
+        #in23:focus{
+            border: 1px solid #000066;
+            outline: none;
+
+        }
+        #in24:focus{
+            border: 1px solid #000066;
+            outline: none;
+
+        }
+        #in25:focus{
+            border: 1px solid #000066;
+            outline: none;
+
+        }
+        
+        #in23{
+            margin-left: 30px;
+            width: 365px;
+            height: 40px;
+            border: 1px solid #000066;
+            border-radius: 5px;
+            background-color: #F0F0F0;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            padding-left: 20px;
+            text-transform: capitalize;
+        }
+        #divin3{
+            display: block;
+        }
+        #in24{
+            width: 60px;
+            height: 35px;
+            background-color: #F0F0F0;
+            border-radius: 5px;
+            border: 1px solid #000066;
+            color: black;
+            margin-left: 30px;
+            text-align: center;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        #in25{
+            width: 120px;
+            height: 35px;
+            background-color: #F0F0F0;
+            border-radius: 5px;
+            border: 1px solid #000066;
+            color: black;
+            margin-left: 38px;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 15px;
+            text-transform: capitalize;
+            cursor: pointer;
+
+
+        }
+        #in26:focus{
+            border: 1px solid #000066;
+            outline: none;
+
+        }
+        #in26{
+            width: 120px;
+            height: 35px;
+            background-color: #F0F0F0;
+            border-radius: 5px;
+            border: 1px solid #000066;
+            color: black;
+            margin-left: 38px;
+            text-align: center;
+            margin-top: 10px;
+            cursor: pointer;
+
+        }
+        .option{
+            width: 60px;
+            background-color: #F0F0F0;
+            border-radius: 5px;
+            border: none;
+            color: black;
+            margin-left: 30px;
+            text-align: center;
+            margin-top: 10px;
+            cursor: pointer;
+
+        }
+        .bba{
+            width: 385px;
+            height: 35px;
+            border: none;
+            border-radius: 5px;
+            background-color: #000066;
+            color: white;
+            text-align: center;
+            margin-left: 30px;
+            font-size: 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            
+
+        }
+        @media(max-width:400px){
+            .h11{
+                margin-left: 70px;
+            }
+            .visa{
+                margin-left: 130px;
+            }
+            #divk{
+                width: 380px;
+
+            }
+            #in21{
+                width: 180px;
+                padding-left: 5px;
+                font-size: 20px;
+            }
+            #in23{
+                margin-left: 30px;
+                width: 280px;
+            }
+            #in26{
+                width: 60px;
+            }
+            .bba{
+                width: 300px;
+                margin-left: 50px;
+            }
+
+        }
+        @media(max-width:900px){
+            .h11{
+                margin-left: 330px;
+            }
+            .visa{
+                margin-left: 380px;
+            }
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h2 class="h11">
+        You chosed to pay with:
+    </h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_oiolN22m9vVbrYhwtstvAUxo9fhsPIbykQ&s" alt="" class="visa">
+
+    
+</body>
+</html>
+<div id="divk">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJYVY5k2bJWw8sL0I7ovlWIHO_82NPhbdqaQ&s" alt="" style="width: 100px; height: 100px; margin-left: 165px;">
+    <div id="divin1" name>
+        <label for="in21" style="display: block; margin-left: 30px;font-size: 20px;">CARD NUMBER</label>
+        <input type="text" name="" id="in21" placeholder="0000-0000-0000-0000"  maxlength="16" >
+        <p id="pinput" style="color: red; margin-left: 30px; margin-top: 5px;"></p>
+    </div>
+    <div id="divin2">
+        <label for="in22" style="display: block; margin-left: 70px;font-size: 20px;">CCV</label>
+        <input type="text" name="" id="in22" placeholder="CCV" maxlength=3  >
+        <p id="pinputi" style="color: red; margin-left: 50px; margin-top: 5px; "></p>
+
+
+    </div>
+    <div id="divin3">
+        <label for="in23" style="margin-top: 120px; display: block; margin-left: 30px; font-size: 20px;" >CARD HOLDER NAME</label>
+        <input type="text" id="in23" maxlength=25 placeholder="John Martin Smith">
+        <p id="pinputii" style="color: red; margin-left: 20px; margin-top: 5px; "></p>
+ 
+
+    </div>
+    <div id="divin4">
+        <label for="in24" style="margin-top: 40px; display: block; margin-left: 30px; font-size: 20px;" >EXPERITION DATE</label>
+        <select name="" id="in24">
+            <option value="1" class="option">1</option>
+            <option value="2" class="option" >2</option>
+            <option value="" class="option" >3</option>
+            <option value="" class="option" >4</option>
+            <option value="" class="option" >5</option>
+            <option value="" class="option" >6</option>
+            <option value="" class="option" >7</option>
+            <option value="" class="option" >8</option>
+            <option value="" class="option" >9</option>
+            <option value="" class="option" >10</option>
+            <option value="" class="option" >11</option>
+            <option value="" class="option" >12</option>
+            <option value="" class="option" >13</option>
+            <option value="" class="option" >14</option>
+            <option value="" class="option" >15</option>
+            <option value="" class="option" >16</option>
+            <option value="" class="option" >17</option>
+            <option value="" class="option" >18</option>
+            <option value="" class="option" >19</option>
+            <option value="" class="option" >20</option>
+            <option value="" class="option" >21</option>
+            <option value="" class="option" >22</option>
+            <option value="" class="option" >23</option>
+            <option value="" class="option" >24</option>
+            <option value="" class="option" >25</option>
+            <option value="" class="option" >26</option>
+            <option value="" class="option" >27</option>
+            <option value="" class="option" >28</option>
+            <option value="" class="option" >29</option>
+            <option value="" class="option" >30</option>
+            <option value="" class="option" >31</option>
+        </select>
+        <select name="" id="in25">
+            <option value="" class="option">january</option>
+            <option value="" class="option">febuary</option>
+            <option value="" class="option">march</option>
+            <option value="" class="option">april</option>
+            <option value="" class="option">may</option>
+            <option value="" class="option">june</option>
+            <option value="" class="option">july</option>
+            <option value="" class="option">agust</option>
+            <option value="" class="option">septemper</option>
+            <option value="" class="option">october</option>
+            <option value="" class="option">november</option>
+            <option value="" class="option">december</option>
+        </select>
+        <select name="" id="in26" >
+            <option value="2005">2005</option>
+            <option value="" class="optoion">2004</option>
+            <option value="" class="optoion">2003</option>
+            <option value="" class="optoion">2002</option>
+            <option value="" class="optoion">2001</option>
+            <option value="" class="optoion">2000</option>
+            <option value="" class="optoion">1999</option>
+            <option value="" class="optoion">1998</option>
+            <option value="" class="optoion">1997</option>
+            <option value="" class="optoion">1996</option>
+            <option value="" class="optoion">1995</option>
+            <option value="" class="optoion">1994</option>
+            <option value="" class="optoion">1993</option>
+            <option value="" class="optoion">1992</option>
+            <option value="" class="optoion">1991</option>
+            <option value="" class="optoion">1990</option>
+            <option value="" class="optoion">1989</option>
+            <option value="" class="optoion">1988</option>
+            <option value="" class="optoion">1987</option>
+            <option value="" class="optoion">1986</option>
+            <option value="" class="optoion">1985</option>
+            <option value="" class="optoion">1984</option>
+            <option value="" class="optoion">1983</option>
+            <option value="" class="optoion">1982</option>
+            <option value="" class="optoion">1981</option>
+            <option value="" class="optoion">1980</option>
+            <option value="" class="optoion">1979</option>
+            <option value="" class="optoion">1978</option>
+            <option value="" class="optoion">1977</option>
+            <option value="" class="optoion">1976</option>
+            <option value="" class="optoion">1975</option>
+        </select>
+
+ 
+
+    </div>
+    <button class="bba">complete order</button>
+
+
+</div>
+
+<script>
+
+
+    function ini(e){
+        let inputi=document.getElementById('in21')
+        let inputi2=document.getElementById('in22')
+
+
+        
+        if(inputi.value.length<=15){
+            inputi.style.border='1px solid red'
+
+            document.getElementById('pinput').innerHTML='Please Finish Card Number'
+        }
+
+        else{
+            inputi.style.border='1px solid #000066'
+            document.getElementById('pinput').innerHTML=''
+
+
+
+
+
+        }
+        e.target.value = e.target.value.replace(/\D/g, '');
+
+    }
+    function ini2(a){
+        let inputi=document.getElementById('in21')
+        let inputi2=document.getElementById('in22')
+
+        if(inputi2.value.length<=2){
+            inputi2.style.border='1px solid red'
+            document.getElementById('pinput').innerHTML='Please Finish Card Numer'
+            document.getElementById('pinputi').innerHTML='Please Finish CCV'
+
+
+        }
+        if(inputi.value.length<=15){
+            inputi.style.border='1px solid red'
+
+        }
+        if(inputi.value.length==16){
+
+            document.getElementById('in21').style.border='1px solid #000066'
+            document.getElementById('pinput').innerHTML=''
+
+
+
+        }
+
+
+        if(inputi2.value.length==3){
+            document.getElementById('in21').style.border='1px solid red'
+
+            inputi2.style.border='1px solid #000066'
+
+            document.getElementById('pinputi').innerHTML=''
+            if(inputi.value.length==16){
+                
+                document.getElementById('in21').style.border='1px solid #000066'
+                document.getElementById('pinput').innerHTML=''
+            }
+
+
+
+        }
+
+
+
+        
+
+
+
+
+
+
+
+    
+        a.target.value = a.target.value.replace(/\D/g, '');
+
+    }
+    function ini3(a){
+        let inputi=document.getElementById('in21')
+        let inputi2=document.getElementById('in22')
+        let inputi3=document.getElementById('in23')        
+        if(inputi3.value.length<=12){
+            inputi3.style.border='1px solid red'
+            document.getElementById('pinputii').innerHTML='Please Finish Card Holder Name'
+
+
+        }
+        else{
+            inputi3.style.border='1px solid #000066'
+            document.getElementById('pinputii').innerHTML=''
+
+
+
+        }
+        a.target.value = a.target.value.replace(/[0-9]/g, '');
+
+
+    }
+
+    document.getElementById('in21').addEventListener('input', ini);
+    document.getElementById('in22').addEventListener('input', ini2);
+    document.getElementById('in23').addEventListener('input', ini3);
+
+
+    
+
+
+
+
+    
+
+        
+
+
+
+</script>
+
+</script>

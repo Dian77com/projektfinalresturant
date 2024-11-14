@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contactus.css">
+    <title>Food Time/Contact Us</title>
+</head>
+<body>
+    <div id="divk1">
+        <img src="Food_Time233-removebg-preview.png" alt="" class="logofodtime">
+
+        <a href="pageHome.html"><button id="b1"><img src="home.png" alt="" class="img1"><p class="p1">Home</p></button></a>
+        <a href="page1.html"><button id="b2" ><img src="restaurant_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt="" class="img1"><p class="p1">Menu</p></button></a>
+
+        <a href="Rezervation.html"><button id="b2" ><img src="calendari-removebg-preview.png" alt="" class="img1"><p class="p1">Rezervation</p></button></a>
+        <a href="contactus.html"><button id="b2" style="background-color: #ffc107;"><img src="contacts_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt="" class="img1"><p class="p1">Contact us</p></button></a>
+        <a href="https://wwwgoogle.com"><button id="b3" ><img src="logout.png" alt="" class="img1"><p class="p1">log out</p></button></a>
+
+
+
+
+
+
+
+
+ 
+        
+    </div>
+
+
+    <div id="divkryesor">
+        <div id="div1n2">
+
+            <input type="text" id="in1" placeholder="Search Type of food"  >
+            <button id="b11" onclick="search()">Search</button>
+        </div> 
+        <img src="menu_open_24dp_FILL0_wght400_GRAD0_opsz24.png" class="imgmenu" alt="" >
+        <h2 class="h22">Contact Us</h2>
+
+
+        <div class="divkryesorn1">
+            <p>
+               Contact Us page this helps you find us in all ways in below you have the mapp where we are also you will find 
+               our address Phone Number and Email also all our social media;
+               enjoy ;) 
+
+            </p>
+
+
+        </div>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        <div class="divkryesorn2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.1475890256647!2d21.15333007651464!3d42.658227716211506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549eeb8dca42eb%3A0x6e2e935d0eaa29c4!2sShkolla%20Digjitale%20%7C%20Digital%20School!5e0!3m2!1sen!2s!4v1731157202389!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+        </div>
+        <div id="divkryesorn3">
+            <div class="info">
+                <p class="pk">Food Time Rezervation</p>
+                <p class="pp">Email: ahmetid16@gmail.com</p>
+                <p class="pp">Adress: Pashko vasa, nr 28, pejton, prishtin</p>
+                <p class="pp">Tel: 045558839</p>
+                <p class="pp">Takeout and Delivery Available (order online or call).</p>
+
+
+            </div>
+            <div class="dailywork">
+                <p class="pk">Daily Work</p>
+                <p class="pp">Monday-Friday: 09:00 - 21:00</p>
+  
+                <p class="pp">Satruday: 14:00 - 21:00</p>
+                <p class="pp">Sunday: vikend</p>
+
+
+            </div>
+            <div class="icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+
+
+            </div>
+            <div></div>
+        </div>
+
+        
+
+    </div>
+    <script src="https://kit.fontawesome.com/56596bff54.js" crossorigin="anonymous">
+  
+ 
+
+
+
+    </script>
+    <script>
+                  document.getElementsByClassName('imgmenu')[0].addEventListener('click',divkryesor)
+function divkryesor(){
+    if(document.getElementById('divk1').style.display=="none"){
+        document.getElementById('divk1').style.display="block"
+        document.getElementById('divkryesor').style.marginLeft="300px"
+
+    }
+    else{
+        document.getElementById('divk1').style.display="none"
+        document.getElementById('divkryesor').style.marginLeft="0px"
+
+    }
+}
+    </script>
+</body>    
+</html>

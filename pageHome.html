@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pageHome.css">
+    <title>Food deleviry services</title></head>
+<body style="background-color:#d9f2ee;">
+    <div id="divk1">
+        <img src="Food_Time233-removebg-preview.png" alt="" class="logofodtime">
+
+        <a href="pageHome.html"><button id="b1"><img src="home.png" alt="" class="img1"><p class="p1">Home</p></button></a>
+        <a href="page1.html"><button id="b2" ><img src="restaurant_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt="" class="img1"><p class="p1">Menu</p></button></a>
+
+        <a href=""><button id="b2"><img src="calendari-removebg-preview.png" alt="" class="img1"><p class="p1">Calendar</p></button></a>
+        <a href=""><button id="b2"><img src="contacts_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt="" class="img1"><p class="p1">Contact us</p></button></a>
+        <a href="https://wwwgoogle.com"><button id="b3"><img src="logout.png" alt="" class="img1"><p class="p1">log out</p></button></a>
+
+
+
+
+
+
+
+
+ 
+        
+    </div>
+    
+
+
+    <div id="divkryesor">
+        <div id="div1n2">
+
+            <input type="text" id="in1" placeholder="Search Type of food"  >
+            <button id="b11" onclick="search()">Search</button>
+        </div> 
+        <img src="menu_open_24dp_FILL0_wght400_GRAD0_opsz24.png" class="imgmenu" alt="" >
+        <h1 class="h21">
+            Home
+        </h1>
+        <div class="divp">
+            <p>
+                Resturant Food Time, this Webpage is used to order food, reservate any table from this Resturant any time any where any type of food.
+                for any information about us, any problem of service or else you can find on contact us description
+                and dont forget to rate us, Enjoy.
+            </p>
+        </div>
+ 
+    </div>
+    <script>
+        document.getElementsByClassName('imgmenu')[0].addEventListener('click',divkryesor)
+function divkryesor(){
+    if(document.getElementById('divk1').style.display=="none"){
+        document.getElementById('divk1').style.display="block"
+        document.getElementById('divkryesor').style.marginLeft="300px"
+
+    }
+    else{
+        document.getElementById('divk1').style.display="none"
+        document.getElementById('divkryesor').style.marginLeft="0px"
+
+    }
+}
+
+    </script>
+</body>
+</html>

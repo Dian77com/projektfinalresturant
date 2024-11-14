@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #divk{
+            width: 300px;
+            height: 300px;
+            display: grid;
+            grid-template-columns: repeat(9,auto);
+            grid-auto-rows: 100px;
+
+            
+        }
+        .div1{
+            grid-row: 1/1;
+            grid-column: 1/4;
+            border: 2px solid black;
+        }
+        .div2{
+            grid-row: 1/1;
+            grid-column: 4/7;
+            border: 2px solid black;
+        }
+        .div3{
+            grid-row: 1/1;
+            grid-column: 7/10;
+            border: 2px solid black;
+        }
+        .div4{
+            grid-row: 2/2;
+            grid-column: 1/4;
+            border: 2px solid black;
+        }        
+        .div5{
+            grid-row: 2/2;
+            grid-column: 4/7;
+            border: 2px solid black;
+        }        
+        .div6{
+            grid-row: 2/2;
+            grid-column: 7/10;
+            border: 2px solid black;
+        }        
+        .div7{
+            grid-row: 3/3;
+            grid-column: 1/4;
+            border: 2px solid black;
+        }
+        .div8{
+            grid-row: 3/3;
+            grid-column: 4/7;
+            border: 2px solid black;
+        }        
+        .div9{
+            grid-row: 3/3;
+            grid-column: 7/10;
+            border: 2px solid black;
+        }
+        #divk div{
+            font-size: 100px;
+            text-align: center;
+            font-family: parmament marker;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="divk">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+        <div class="div5"></div>
+        <div class="div6"></div>
+        <div class="div7"></div>
+        <div class="div8"></div>
+        <div class="div9"></div>
+
+
+    </div>
+    <script>
+        const options=[
+            [1,2,3]
+            [4,5,6]
+            [7,8,9]
+            [1,5,9]
+            [3,5,7]
+        ]
+    </script>
+    
+</body>
+</html>

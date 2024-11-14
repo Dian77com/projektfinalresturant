@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .h12 {
+            font-family: "Pacifico", cursive;
+            font-weight: 400;
+            font-style: normal;
+            color: rgba(24, 36, 80, 1);
+            text-align: center;
+        }
+        .paypal{
+            width: 170px;
+            height: 140px;
+            margin: -20px 0px 0px 590px;
+        }
+        .p23{
+            font-size: 25px;
+            font-family: "Pacifico", cursive;
+            color: rgba(24, 36, 80, 1);
+            margin-left: 630px;
+            margin-top: -30px;
+
+
+
+        }
+
+        #divk2{
+            width: 450px;
+            height: 500px;
+            background-color: white;
+            outline: 10px solid rgba(24, 36, 80, 1);
+            outline-offset: -15px;
+            background-color: rgb(255, 255, 255);
+            margin-top: 50px;
+            border-radius: 20px;
+            margin-left: 460px;
+            box-shadow: 0px 0px 5px gray;
+            
+        }
+        .paypal2{
+            margin: 20px 0px 0px 170px;
+        }
+        .ptitle{
+            color:rgba(181, 185, 199, 1);
+            margin-left: 50px;
+            font-size: 30px;
+            margin-top: 0px;
+
+            
+            
+        }
+        .ptitle2{
+            color:rgba(24, 36, 80, 1) ;
+            margin-left: 100px;
+            font-size: 30px;
+            margin-top: -30px;
+        }
+        #in1,#in2{
+            width: 320px;
+            height: 30px;
+            border: 3px solid rgba(24, 36, 80, 1);
+            border-radius: 10px;
+            margin-left: 30px;
+            padding-left: 10px;
+            margin-top: 0px;
+
+        }
+        #b12{
+            width: 160px;
+            height: 40px;
+            background-color: rgba(24, 36, 80, 1);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-left: 140px;
+            margin-top: -2px;
+            cursor: pointer;
+
+        }
+        .a2{
+            margin-left: 135px;
+        }
+        .a1{
+            display: block; 
+            margin: 10px 0px 10px 162px;
+        }
+
+
+        @media(max-width:400px){
+            #divk2{
+                margin-left: 0px;
+                width: 380px;
+            }
+            .paypal{
+                margin-left: 100px;
+            }
+            .p23{
+                margin-left: 140px;
+                margin-top: 5px;
+
+
+            }
+            .paypal2{
+                margin-left: 130px;
+            }
+            #in1,#in2{
+                margin-left: 25px;
+                width: 300px;
+            }
+            #b12{
+                margin-left: 110px;
+            }
+            .a2{
+                margin-left: 105px;
+            }
+            .a1{
+                margin-left: 130px;
+
+
+            }
+          
+
+        }
+        @media(max-width:900px){
+            #divk2{
+                margin-left: 230px;
+                width: 450px;
+                
+            }
+            .paypal{
+                margin-left: 370px;
+            }
+            .p23{
+                margin-left: 410px;
+            }
+
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h2 class="h12">You Chosed To pay With: </h2>
+        <img src="https://www.paypalobjects.com/marketing/web23/us/en/quantum-leap/mobile-apps/card-wrapped-content-section-01_size-all.png?quality=40&width=300" class="paypal">
+        <p class="p23" >PayPal</p>
+    </div>
+
+    <div id="divk2">
+        <img src="https://www.paypalobjects.com/marketing/web23/us/en/quantum-leap/mobile-apps/card-wrapped-content-section-01_size-all.png?quality=40&width=300" width="100px" height="80px" class="paypal2">
+        <p class="ptitle">Alredy Have a</p>
+        <p class="ptitle2" >PayPal Account</p>
+        <label for="in1" style="display: block; margin-left:30px; color: rgba(24, 36, 80, 1); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; ">Email:</label>
+
+        <input type="email" placeholder="Email" id="in1">
+        <p style="color: red; margin-left: 30px; margin-top: 5px;"></p>
+
+
+        <label for="in2"  style="display: block; margin-left:30px; color: rgba(24, 36, 80, 1); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; ">password:</label>
+        <input type="password" id="in2" placeholder="Password">
+        <p style="color: red; margin-left: 30px; margin-top: 5px;"></p>
+        <button id="b12" onclick="paynow()">Complete Payment</button>
+
+        <a href="https://www.paypal.com" class="a1" >Forgot Password?</a>
+        <a href="https://www.paypal.com/us/webapps/mpp/account-selection" class="a2">don't have paypal account?</a>
+
+
+
+
+    </div>
+    <script>
+        function paynow(){
+            
+
+            let in1 = document.getElementById('in1').value;
+            let in2 = document.getElementById('in2').value;
+
+
+
+            let in22=/[A-Z]/.test(in2)
+            let in23=/[a-z]/.test(in2)
+            let in24=/\d/.test(in2)
+            if(in2.length==0){
+                 document.getElementById('in2').style.border='2px solid red'
+                document.getElementsByTagName('p')[4].innerHTML="Please type your password"
+
+            }
+
+            else if(in2.length<=7){
+                document.getElementById('in2').style.border='2px solid red'
+                document.getElementsByTagName('p')[4].innerHTML="It should  Includes more than 8 charachters"
+
+            }
+
+
+            else if(in22==false){
+                document.getElementById('in2').style.border='2px solid red'
+                document.getElementsByTagName('p')[4].innerHTML="It should  Includes an uppercase"
+
+            }
+            else if(in23==false){
+                document.getElementById('in2').style.border='2px solid red'
+                document.getElementsByTagName('p')[4].innerHTML="It should  Includes an lowercase"
+
+            }
+            else if(in24==false){
+                document.getElementById('in2').style.border='2px solid red'
+                document.getElementsByTagName('p')[4].innerHTML="It should  Includes at least one number"
+
+            }
+
+            
+
+            else{
+                document.getElementById('in2').style.border='2px solid rgba(24, 36, 80, 1)'
+                document.getElementsByTagName('p')[4].innerHTML=""
+
+            }
+            if(in1.length==0){
+                document.getElementById('in1').style.border = '2px solid red';
+                document.getElementsByTagName('p')[3].innerHTML="Please type your email"
+                
+            }
+            else if(!in1.includes('gmail') && !in1.includes('GMAIL') && !in1.includes('hotmail') &&  !in1.includes('HOTMAIL')){
+                document.getElementById('in1').style.border = '2px solid red';
+                document.getElementsByTagName('p')[3].innerHTML="It Nedds to Include: 'an adress'"
+
+            }
+            else if(!in1.includes('@')) {
+                document.getElementById('in1').style.border = '2px solid red';
+                document.getElementsByTagName('p')[3].innerHTML="It Nedds to Include: '@'"
+
+                
+            }
+
+            else if(!in1.includes('.com') && !in1.includes('.COM')&& !in1.includes('.net') && !in1.includes('.NET') && !in1.includes('.org') && !in1.includes('.ORG')){
+                document.getElementById('in1').style.border = '2px solid red';
+                document.getElementsByTagName('p')[3].innerHTML="It Nedds to Include: 'DNS'"
+            }
+  
+            else{
+                document.getElementById('in1').style.border = '2px solid rgba(24, 36, 80, 1)';
+                document.getElementsByTagName('p')[3].innerHTML=""
+
+
+
+            }
+
+        }
+
+
+
+
+        
+
+
+    </script>
+
+    
+</body>
+</html>
